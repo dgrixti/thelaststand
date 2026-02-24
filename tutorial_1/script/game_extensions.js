@@ -1,3 +1,5 @@
+/* ---------------------------------------------------------------------------------*/
+
 /**
  * Bullet class 
  * 
@@ -26,6 +28,9 @@ Bullet.prototype.update = function () {
 };
 
 
+/* ---------------------------------------------------------------------------------*/
+
+
 /**
  * Sub-type class canvas AliensCanvas, extends base class Canvas.
  *
@@ -51,14 +56,28 @@ AliensCanvas.prototype.drawBullet = function (bullet) {
     this.ctx.fillStyle = bullet.color;
     this.ctx.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
 };
+
+
 AliensCanvas.prototype.drawBackground = function (backgroundImage, backgroundMovementYAxis) {
+
+    //var canvasX = this.canvas.width;
+    //var canvasY = this.canvas.height;
+
+    //alert(backgroundImage.src);
+
+    //alert(backgroundImage.width);
+
     // Pan background
     this.ctx.drawImage(backgroundImage, 0, 0, backgroundImage.width, backgroundImage.height);
 
     // Draw another image at the top edge of the first image
     this.ctx.drawImage(backgroundImage, 0, backgroundMovementYAxis, backgroundImage.width, backgroundImage.height);
 
+    //this.ctx.drawImage(backgroundImage, canvasX, canvasY - backgroundImage.height);
+ 
 };
+
+
 AliensCanvas.prototype.drawImage = function (img, x, y) {
     this.ctx.drawImage(img, x, y, img.width, img.height);
 };

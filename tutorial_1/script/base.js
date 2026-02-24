@@ -10,8 +10,6 @@ function Canvas(width, height) {
     // create canvas and grab 2d context
     this.canvas = document.createElement("canvas");
 
-    //alert(this.canvas);
-
     this.canvas.id = "invaders_canvas";
     this.canvas.width = this.width = width;
     this.canvas.height = this.height = height;
