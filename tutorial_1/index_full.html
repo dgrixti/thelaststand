@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Space Invaders</title>
+
+
+        <script src='script/three.min.js'></script>
+        <script src='script/threex.planets.js'></script>
+        <script src='script/threex.atmospherematerial.js'></script>
+
+        <script src="script/howler.js"></script> <!-- external lib-->
+        <script src="script/base.js"></script>
+        <script src="script/game.js"></script>
+        <script src="script/game_extensions.js"></script>
+        <script src="script/input.js"></script>
+        <script src="script/utils.js"></script>
+
+        
+        <script src="script/animation_planet.js"></script>
+            
+
+        <!----
+        <style>
+            canvas {
+                background-color: #000;
+                /*background-image:url('resource/bg-o.png');*/
+                display: block;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        </style>
+        -->
+
+        <style type="text/css">
+            html, body {
+                padding: 0;
+                margin: 0;
+
+
+            }
+
+            body {
+              background: black;
+              text-align: center;
+            }
+
+            /*
+            #earth_div {
+                width:1024px;
+                height:768px;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                /*position: absolute !important;/
+
+            }
+            */
+            /*canvas {*/
+
+            #game_div {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 3;
+
+                background-color:transparent;
+            }
+            #game_div {
+                font-size: 70px;
+                z-index: 1;
+
+                width:680px;
+                height:908px;
+                top: 0px;
+                left:33%;
+
+                position: absolute !important;
+
+
+            }
+            #container {
+                           position: absolute;
+                            z-index: 0;
+                               width:680px;
+                height:908px;
+                left:33%;
+                background-color:black;
+            }
+        </style>
+
+    </head>
+    <body >
+        <div id="container"></div>
+        <div id="game_div"></div>
+    </body>
+</html>
+
+
+
+
+
